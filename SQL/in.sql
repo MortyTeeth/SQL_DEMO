@@ -1,0 +1,3 @@
+SELECT col_name1, col_name2,...
+FROM table_name
+WHERE col_name IN (value1, value2,...) ;
