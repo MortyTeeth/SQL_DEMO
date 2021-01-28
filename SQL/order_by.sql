@@ -1,0 +1,3 @@
+SELECT col_name1, col_name2, ...
+FROM table_name
+ORDER BY col_name, col_name, ...ASC|DESC;

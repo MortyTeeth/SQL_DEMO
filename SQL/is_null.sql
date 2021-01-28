@@ -1,0 +1,3 @@
+SELECT col_name1, col_name2, col_name3, ...
+FROM table_name
+WHERE col_name1 IS NULL;
