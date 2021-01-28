@@ -8,14 +8,15 @@
 3. Инструкция по подключению клиента к базе данных.
 4. Демонстрационные скрипты.
 
-* Установка docker
-* Установка docker-compose
-* Установка postgresql
+* [Установка docker](https://www.digitalocean.com/community/tutorials/docker-ubuntu-18-04-1-ru)
+* [Установка docker-compose](https://docs.docker.com/compose/install/)
+* [Установка postgresql](https://hub.docker.com/_/postgres)
 
 
 
-### 1. Установка Docker.
+### 1. Установка Docker. 
 
+```
 1. Обновляем существующий перечень пакетов:
 (sudo apt update)
 2. Устанавливаем необходимые пакеты, которые позволяют apt использовать пакеты по HTTPS:
@@ -38,27 +39,31 @@
 (su - ${USER})
 11. Проверяем, что пользователь добавлен в группу docker можно следующим образом:
 (id -nG)
-
+```
  
 ### 2. Установка Docker-compose.
 
+```
 1. Проверяем текущую версию и при необходимости обновляем её:
 (sudo curl -L https://github.com/docker/compose/releases/download/1.27.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose)
 2. После этого мы настраиваем разрешения:
 (sudo chmod +x /usr/local/bin/docker -compose)
 3. После установки проверяем, что она прошла успешно, с помощью проверки версии:
 (docker -compose --version)(Output: docker -compose --version 1.27.4, build 40524192)
-        
+```        
 ### 3. Установка Postgresql.
 
+```
 1. Сначала создаём docker-compose.yml
 2. В него заносим необходимый код
 3. После этого вводим команду
 (docker-compose up -d)
 4. Дожидаемся инициализации
 5. Переходим по адресу http://localhost:8080                                      
-        
+```        
 ### 4. Вход в систему.
 
+```
 1. Заполняем необходимые поля: System(PostgreSQL), Server(db), Username(postgres), Password(example)
-2. Логинемся в системе.
+2. Логинемся в системе. 
+```
